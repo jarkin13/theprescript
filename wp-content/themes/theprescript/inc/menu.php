@@ -2,30 +2,31 @@
 /**
  * Require Menu Walker for BEM
  *
- * @package theprescript
+ * @package theme_name
  */
 
+// Include files required for initialization.
 require get_parent_theme_file_path( '/inc/menu/class-walker-texas-ranger.php' );
 
 /**
  * Set menues
  *
- * @package theprescript
+ * @package theme_name
  */
 
 add_action( 'init', 'inf_register_menus' );
 
 if ( ! function_exists( 'inf_register_menus' ) ) {
-	/**
-	 * Register Menu positions
-	 */
-	function inf_register_menus() {
-		register_nav_menus(
-			array(
-			'header_main_nav' => esc_html__( 'Menu', 'theprescript' ),
-			)
-		);
-	}
+  /**
+   * Register Menu positions
+   */
+  function inf_register_menus() {
+    register_nav_menus(
+        array(
+            'header_main_nav' => esc_html__( 'Menu', 'theme_name' ),
+        )
+    );
+  }
 }
 
 /**
@@ -38,26 +39,27 @@ if ( ! function_exists( 'inf_register_menus' ) ) {
  */
 function bem_menu( $location = 'main_menu', $css_class_prefix = 'main-menu', $css_class_modifiers = null ) {
 
-	// Check to see if any css modifiers were supplied.
-	if ( $css_class_modifiers ) {
+  // Check to see if any css modifiers were supplied.
+  if ( $css_class_modifiers ) {
 
-		if ( is_array( $css_class_modifiers ) ) {
-			$modifiers = implode( ' ', $css_class_modifiers );
-		} elseif ( is_string( $css_class_modifiers ) ) {
-			$modifiers = $css_class_modifiers;
-		}
-	} else {
-		$modifiers = '';
-	}
+    if ( is_array( $css_class_modifiers ) ) {
+      $modifiers = implode( ' ', $css_class_modifiers );
+    } elseif ( is_string( $css_class_modifiers ) ) {
+      $modifiers = $css_class_modifiers;
+    }
+  } else {
+    $modifiers = '';
+  }
 
-	$args = array(
-		'theme_location'    => $location,
-		'container'         => false,
-		'items_wrap'        => '<ul class="' . $css_class_prefix . ' ' . $modifiers . '">%3$s</ul>',
-		'walker'            => new Walker_Texas_Ranger( $css_class_prefix, true ),
-	);
+  $args = array(
+      'theme_location'    => $location,
+      'container'         => false,
+      'items_wrap'        => '<ul class="' . $css_class_prefix . ' ' . $modifiers . '">%3$s</ul>',
+      'walker'            => new Walker_Texas_Ranger( $css_class_prefix, true ),
+  );
 
-	if ( has_nav_menu( $location ) ) {
-		return wp_nav_menu( $args );
-	}
+  if ( has_nav_menu( $location ) ) {
+    return wp_nav_menu( $args );
+  }
 }
+

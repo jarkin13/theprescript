@@ -1,0 +1,14 @@
+.input,
+.select,
+.textarea {
+  @extend %input-reset;
+
+  &:focus {
+    @extend %input-focus-shadow;
+  }
+}
+
+// .label {
+
+// }
+

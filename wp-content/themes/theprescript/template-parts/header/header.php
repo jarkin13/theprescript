@@ -24,11 +24,13 @@
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
     <div id="nav" class="collapse navbar-collapse">
-      <?php bem_menu(
-    		'header_main_nav',
-    		'nav',
-        'navbar-nav ml-auto'
-    	); ?>
+      <?php
+        bem_menu(
+            'header_main_nav',
+            'nav',
+            'navbar-nav ml-auto'
+        );
+      ?>
     </div>
   </nav>
 </header>

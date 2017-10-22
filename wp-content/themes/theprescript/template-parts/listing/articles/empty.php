@@ -8,5 +8,5 @@
 ?>
 
 <article class="article-empty">
-	<?php esc_html_e( 'Sorry no items found', 'theprescript' ); ?>
+  <?php esc_html_e( 'Sorry no items found', 'theprescript' ); ?>
 </article>

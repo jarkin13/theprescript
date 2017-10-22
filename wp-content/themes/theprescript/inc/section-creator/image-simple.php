@@ -32,8 +32,8 @@ if ( ! function_exists( 'inf_sc_get_image_simple' ) ) {
     }
 
     return array(
-    'image' => esc_url( $image ),
-    'title' => esc_html( $image_title ),
+        'image' => esc_url( $image ),
+        'title' => esc_html( $image_title ),
     );
   }
 }// End if().

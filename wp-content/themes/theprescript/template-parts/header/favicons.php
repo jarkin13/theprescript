@@ -24,10 +24,10 @@
 
 <?php if ( file_exists( $favicon_path . $favicon_192 ) ) { ?>
   <!-- General -->
-  <link rel="shortcut icon" href="<?php echo esc_url( $favicon_url . $favicon_192 );  ?>" />
+  <link rel="shortcut icon" href="<?php echo esc_url( $favicon_url . $favicon_192 ); ?>" />
 
   <!-- Chrome -->
-  <link rel="icon" sizes="192x192" href="<?php echo esc_url( $favicon_url . $favicon_192 );  ?>">
+  <link rel="icon" sizes="192x192" href="<?php echo esc_url( $favicon_url . $favicon_192 ); ?>">
 <?php } ?>
 
 <!-- IOS -->
