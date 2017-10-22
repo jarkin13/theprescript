@@ -1,6 +1,12 @@
 .header {
   max-width: 90%;
 
+  .nav-brand {
+    @include element('logo-img')  {
+      width: 100%;
+    }
+  }
+
   &-hero {
     padding: 10rem 0;
     background-size: cover;
@@ -34,11 +40,5 @@
   h1 {
     font-weight: 400;
     letter-spacing: 5px;
-  }
-
-  .nav-brand {
-    @include element('logo-img')  {
-      width: 100%;
-    }
   }
 }
