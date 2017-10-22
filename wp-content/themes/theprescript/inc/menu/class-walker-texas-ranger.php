@@ -110,7 +110,7 @@ class Walker_Texas_Ranger extends Walker_Nav_Menu {
 
 		// Item classes.
 		$item_classes = array(
-		'item_class'            => 0 === $depth ? $prefix . $suffix['item'] : '',
+		'item_class'            => 0 === $depth ? 'nav-item ' . $prefix . $suffix['item'] : '',
 		'parent_class'          => $args->has_children ? $parent_class = $prefix . $suffix['parent_item'] : '',
 		'active_page_class'     => in_array( 'current-menu-item',$item->classes, true ) ? $prefix . $suffix['active_item'] : '',
 		'active_parent_class'   => in_array( 'current-menu-parent',$item->classes, true ) ? $prefix . $suffix['parent_of_active_item'] : '',
@@ -128,7 +128,7 @@ class Walker_Texas_Ranger extends Walker_Nav_Menu {
 
 		// Link classes.
 		$link_classes = array(
-		'item_link'             => 0 === $depth ? $prefix . $suffix['link'] : '',
+		'item_link'             => 0 === $depth ? 'nav-link ' . $prefix . $suffix['link'] : '',
 		'depth_class'           => $depth >= 1 ? $prefix . $suffix['sub_menu'] . $suffix['link'] . '  ' . $prefix . $suffix['sub_menu'] . '--' . $depth . $suffix['link'] : '',
 		);
 

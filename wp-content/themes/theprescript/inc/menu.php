@@ -61,4 +61,3 @@ function bem_menu( $location = 'main_menu', $css_class_prefix = 'main-menu', $cs
 		return wp_nav_menu( $args );
 	}
 }
-

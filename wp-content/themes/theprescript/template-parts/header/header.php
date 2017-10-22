@@ -11,14 +11,24 @@
   $blog_name = get_bloginfo( 'name' );
   $blog_description = get_bloginfo( 'description' );
 ?>
-<div class="header">
-  <a class="header__logo-link" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( $blog_name ); ?>">
-  <img class="header__logo-img" src="<?php echo esc_url( IMAGE_URL . 'logo.svg' ); ?>" title="<?php echo esc_attr( $blog_name ); ?> - <?php echo esc_attr( $blog_description ); ?>" alt="<?php echo esc_attr( $blog_name ); ?> - <?php echo esc_attr( $blog_description ); ?>" />
-  </a>
-	<?php
-	bem_menu(
-		'header_main_nav',
-		'main-navigation'
-	);
-	get_template_part( 'template-parts/header/search', 'form' ); ?>
-</div>
+<header id="main" class="mx-auto">
+  <nav class="navbar navbar-expand-md">
+    <div class="col-auto">
+      <div class="nav-brand">
+        <a class="header__logo-link" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( $blog_name ); ?>">
+          <img class="header__logo-img" src="<?php echo esc_url( IMAGE_URL . 'logo.svg' ); ?>" title="<?php echo esc_attr( $blog_name ); ?> - <?php echo esc_attr( $blog_description ); ?>" alt="<?php echo esc_attr( $blog_name ); ?> - <?php echo esc_attr( $blog_description ); ?>" />
+        </a>
+      </div>
+    </div>
+    <button class="btn btn-link navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <?php bem_menu(
+    		'header_main_nav',
+    		'nav',
+        'navbar-nav ml-auto'
+    	); ?>
+    </div>
+  </nav>
+</header>
