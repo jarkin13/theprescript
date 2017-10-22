@@ -2,7 +2,7 @@ const DEV = process.env.NODE_ENV !== 'production';
 
 const path = require('path');
 
-const themeName = 'theme_name';
+const themeName = 'theprescript';
 const fontsPath = path.join(__dirname, `wp-content/themes/${themeName}/skin/assets/fonts`);
 
 const plugins = [

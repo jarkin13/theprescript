@@ -5,9 +5,9 @@
   "private": true,
   "main": "",
   "scripts": {
-    "__sassUnusedTheme": "sass-unused \"wp-content/themes/theme_name/**/*.scss\"",
-    "__eslintTheme": "eslint wp-content/themes/theme_name/skin/assets/",
-    "__stylelintTheme": "stylelint \"wp-content/themes/theme_name/**/*.scss\" --syntax scss",
+    "__sassUnusedTheme": "sass-unused \"wp-content/themes/theprescript/**/*.scss\"",
+    "__eslintTheme": "eslint wp-content/themes/theprescript/skin/assets/",
+    "__stylelintTheme": "stylelint \"wp-content/themes/theprescript/**/*.scss\" --syntax scss",
     "precommit": "npm run __eslintTheme && npm run __stylelintTheme && npm run __sassUnusedTheme",
     "start": "webpack --progress --watch --display-error-details --display-modules --display-reasons",
     "build": "NODE_ENV=production webpack --progress"
