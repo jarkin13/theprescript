@@ -11,7 +11,7 @@
   $blog_name = get_bloginfo( 'name' );
   $blog_description = get_bloginfo( 'description' );
 ?>
-<header id="main" class="mx-auto">
+<header class="header header-main mx-auto">
   <nav class="navbar navbar-expand-md">
     <div class="col-auto">
       <div class="nav-brand">
