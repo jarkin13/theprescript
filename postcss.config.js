@@ -12,11 +12,11 @@ const plugins = [
 
     // This method doesent support subsets so if you are using subsets this can't help you!
     variants: {
-      'Open Sans': {
+      'Lato': {
+        100: [],
+        300: [],
         400: [],
-        600: [],
-        700: [],
-        800: []
+        700: []
       }
     },
     foundries: ['google']

@@ -1,5 +1,5 @@
 .header {
-  max-width: 1280px;
+  max-width: 90%;
 
   &-hero {
     padding: 10rem 0;
@@ -7,10 +7,33 @@
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    position: relative;
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      background-color: #000000;
+      opacity: .55;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+    }
 
     @include media-breakpoint-up(lg) {
       padding: 15rem 0;
     }
+  }
+
+  h1 {
+    font-weight: 400;
+    letter-spacing: 5px;
   }
 
   .nav-brand {
