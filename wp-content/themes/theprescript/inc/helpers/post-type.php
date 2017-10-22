@@ -2,7 +2,7 @@
 /**
  * Functions related to post types
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( ! function_exists( 'inf_get_post_type_link' ) ) {

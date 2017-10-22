@@ -2,14 +2,14 @@
 /**
  * Menu Walker Class
  *
- * @package theme_name
+ * @package theprescript
  */
 
 /**
  * Walker Texas Ranger
  * Inserts some BEM naming sensibility into Wordpress menus
  *
- * @package theme_name
+ * @package theprescript
  */
 class Walker_Texas_Ranger extends Walker_Nav_Menu {
 

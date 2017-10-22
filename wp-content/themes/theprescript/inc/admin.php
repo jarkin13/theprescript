@@ -2,7 +2,7 @@
 /**
  * Functions related to Admin section
  *
- * @package theme_name
+ * @package theprescript
  */
 
 add_filter( 'login_headerurl', 'inf_custom_login_url' );

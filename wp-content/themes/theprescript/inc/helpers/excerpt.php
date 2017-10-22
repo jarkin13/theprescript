@@ -2,7 +2,7 @@
 /**
  * Except functions
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( ! function_exists( 'inf_get_excerpt' ) ) {

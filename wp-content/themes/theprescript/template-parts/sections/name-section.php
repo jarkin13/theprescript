@@ -2,7 +2,7 @@
 /**
  * Section Example
  *
- * @package theme_name
+ * @package theprescript
  */
 
 ?>

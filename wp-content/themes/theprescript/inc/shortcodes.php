@@ -2,7 +2,7 @@
 /**
  * Functions for shortcodes
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( ! function_exists( 'inf_do_shortcode' ) ) {
@@ -10,7 +10,7 @@ if ( ! function_exists( 'inf_do_shortcode' ) ) {
      *
      * Call a shortcode function by tag name.
      *
-     * @package theme_name
+     * @package theprescript
      *
      * @author J.D. Grimes
      * @link https://codesymphony.co/dont-do_shortcode/

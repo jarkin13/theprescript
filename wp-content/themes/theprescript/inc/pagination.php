@@ -2,7 +2,7 @@
 /**
  * Function for pagination
  *
- * @package theme_name
+ * @package theprescript
  */
 
 /**

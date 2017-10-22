@@ -2,7 +2,7 @@
 /**
  * Grid Article
  *
- * @package theme_name
+ * @package theprescript
  */
 
 ?>

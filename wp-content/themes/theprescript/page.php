@@ -2,7 +2,7 @@
 /**
  * Display regular page
  *
- * @package theme_name
+ * @package theprescript
  */
 
 get_header();

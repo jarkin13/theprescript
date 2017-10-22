@@ -2,7 +2,7 @@
 /**
  * Single page for Posts
  *
- * @package theme_name
+ * @package theprescript
  */
 
 get_header();

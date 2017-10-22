@@ -2,7 +2,7 @@
 /**
  * Functions related to wp gallery shortcode
  *
- * @package theme_name
+ * @package theprescript
  */
 
 add_filter( 'post_gallery', 'inf_post_gallery_wrapper', 10 ,3 );

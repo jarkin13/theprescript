@@ -1,19 +1,19 @@
 <?php
 /**
- * Theme Name: theme_name
+ * Theme Name: theprescript
  * Description: description
  * Author: author
  * Author URI: author_uri
  * Version: version
  *
- * @package theme_name
+ * @package theprescript
  */
 
 /**
  * Change every time you deploy changes in assets to server
  * to force browser to clear cache
  *
- * @package theme_name
+ * @package theprescript
  */
 
 define( 'ASSETS_VERSION', '1' );
@@ -21,7 +21,7 @@ define( 'ASSETS_VERSION', '1' );
 /**
  * Global image path
  *
- * @package theme_name
+ * @package theprescript
  */
 define( 'IMAGE_URL', get_template_directory_uri() . '/skin/public/images/' );
 

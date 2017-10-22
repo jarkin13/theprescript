@@ -2,7 +2,7 @@
 /**
  * List Simple Article
  *
- * @package theme_name
+ * @package theprescript
  */
 
 ?>

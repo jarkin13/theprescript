@@ -2,7 +2,7 @@
 /**
  * Functions related to class modifiers
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( ! function_exists( 'inf_modifier' ) ) {

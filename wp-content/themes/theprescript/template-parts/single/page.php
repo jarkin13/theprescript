@@ -2,7 +2,7 @@
 /**
  * Single Page
  *
- * @package theme_name
+ * @package theprescript
  */
 
 ?>

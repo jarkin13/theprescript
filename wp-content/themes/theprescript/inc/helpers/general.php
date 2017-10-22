@@ -2,7 +2,7 @@
 /**
  * Functions for general stuff
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( ! function_exists( 'inf_get_array_value' ) ) {

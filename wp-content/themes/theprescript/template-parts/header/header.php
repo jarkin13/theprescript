@@ -2,7 +2,7 @@
 /**
  * Main header bar
  *
- * @package theme_name
+ * @package theprescript
  */
 
 ?>

@@ -2,7 +2,7 @@
 /**
  * Button for section creator
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( ! function_exists( 'inf_sc_get_button' ) ) {

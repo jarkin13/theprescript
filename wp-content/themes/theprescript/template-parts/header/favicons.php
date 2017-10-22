@@ -2,7 +2,7 @@
 /**
  * Use default or cusotm Favicons
  *
- * @package theme_name
+ * @package theprescript
  */
 
  $favicon_url = IMAGE_URL;

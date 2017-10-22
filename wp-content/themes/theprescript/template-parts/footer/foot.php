@@ -2,7 +2,7 @@
   /**
    * Footer
    *
-   * @package theme_name
+   * @package theprescript
    */
 
 ?>

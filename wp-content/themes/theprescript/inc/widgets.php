@@ -2,15 +2,15 @@
 /**
  * Set up widget areas
  *
- * @package theme_name
+ * @package theprescript
  */
 
 if ( function_exists( 'register_sidebar' ) ) {
 	register_sidebar(
 		array(
-		'name'          => esc_html__( 'Blog', 'theme_name' ),
+		'name'          => esc_html__( 'Blog', 'theprescript' ),
 		'id'            => 'blog',
-		'description'   => esc_html__( 'Description', 'theme_name' ),
+		'description'   => esc_html__( 'Description', 'theprescript' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '',

@@ -2,7 +2,7 @@
 /**
  * Functions related to general theme settings
  *
- * @package theme_name
+ * @package theprescript
  */
 
 add_theme_support( 'title-tag' );

@@ -2,7 +2,7 @@
 /**
  * Require Menu Walker for BEM
  *
- * @package theme_name
+ * @package theprescript
  */
 
 require get_parent_theme_file_path( '/inc/menu/class-walker-texas-ranger.php' );
@@ -10,7 +10,7 @@ require get_parent_theme_file_path( '/inc/menu/class-walker-texas-ranger.php' );
 /**
  * Set menues
  *
- * @package theme_name
+ * @package theprescript
  */
 
 add_action( 'init', 'inf_register_menus' );
@@ -22,7 +22,7 @@ if ( ! function_exists( 'inf_register_menus' ) ) {
 	function inf_register_menus() {
 		register_nav_menus(
 			array(
-			'header_main_nav' => esc_html__( 'Menu', 'theme_name' ),
+			'header_main_nav' => esc_html__( 'Menu', 'theprescript' ),
 			)
 		);
 	}

@@ -2,7 +2,7 @@
 /**
  * Set images sizes
  *
- * @package theme_name
+ * @package theprescript
  */
 
 add_theme_support( 'post-thumbnails' );

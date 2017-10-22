@@ -5,7 +5,7 @@
 	/**
 	 * Main header file
 	 *
-	 * @package theme_name
+	 * @package theprescript
 	 */
 
 	get_template_part( 'template-parts/header/head' );

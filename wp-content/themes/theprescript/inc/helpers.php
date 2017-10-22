@@ -2,7 +2,7 @@
 /**
  * Include Helpers from files
  *
- * @package theme_name
+ * @package theprescript
  */
 
 /**

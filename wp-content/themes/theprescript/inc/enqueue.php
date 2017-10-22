@@ -2,7 +2,7 @@
 /**
  * Register scripts
  *
- * @package theme_name
+ * @package theprescript
  */
 
 add_action( 'wp_enqueue_scripts', 'inf_register_scripts', 1 );
