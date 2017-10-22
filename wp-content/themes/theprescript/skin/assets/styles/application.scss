@@ -7,9 +7,6 @@
 @import '~susy';
 @import '~slick-carousel/slick/slick.scss';
 
-// Main files
-@import 'config';
-
 // Utils
 @import 'utils/colors';
 @import 'utils/shared-variables';
@@ -23,44 +20,5 @@
 // Config
 @import 'core';
 
-//Icons
-@import 'components/icons/icons';
-
-// Typography
-@import 'components/typography/typography';
-@import 'components/typography/content-media-style';
-@import 'components/typography/content-typography-style';
-
-// Buttons
-@import 'components/buttons/buttons';
-
-//Forms
-@import 'components/forms/form';
-@import 'components/forms/checkbox';
-@import 'components/forms/radio';
-@import 'components/forms/input';
-@import 'components/forms/cf7';
-
 // Header
 @import 'components/header/header';
-
-//Article
-// @import 'components/article/article-list';
-// @import 'components/article/article-grid';
-// @import 'components/article/article-empty';
-
-//Listing
-// @import 'components/listing/listing-list';
-// @import 'components/listing/listing-grid';
-
-//Sections
-// @import 'components/sections/';
-
-// Parts
-// @import 'components/parts/';
-
-// Single
-@import 'components/single';
-
-// Pages
-// @import 'components/pages/';
