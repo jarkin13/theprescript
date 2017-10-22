@@ -1,0 +1,14 @@
+/* stylelint-disable */
+// Vendors - node modules
+@import '~normalize.css';
+@import '~bootstrap/scss/bootstrap';
+
+// Utils
+@import 'utils/colors';
+@import 'utils/shared-variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/keyframes';
+@import 'utils/helpers';
+@import 'utils/z-indexes';
+@import 'utils/placeholders';
