@@ -12,7 +12,7 @@
   <h1>Real Women <br> with Real Advice</h1>
   <form>
     <label class="custom-control custom-radio">
-      <span class="custom-control-description">Are you ..</span>
+      <span class="custom-control-description custom-control-title">Are you</span>
     </label>
     <label class="custom-control custom-radio">
       <input id="radio1" name="radio" type="radio" value="relationship" class="custom-control-input">

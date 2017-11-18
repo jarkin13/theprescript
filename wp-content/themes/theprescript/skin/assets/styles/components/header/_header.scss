@@ -4,6 +4,7 @@
   .nav-brand {
     @include element('logo-img')  {
       width: 100%;
+      max-width: 163px;
     }
   }
 
@@ -11,10 +12,14 @@
     padding: 10rem 0;
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: #FFFFFF;
     text-transform: uppercase;
     position: relative;
+    background-position: center center;
 
+    @include media-breakpoint-up(lg) {
+      padding: 12rem 0;
+    };
     > * {
       position: relative;
       z-index: 2;
@@ -23,7 +28,7 @@
     &:before {
       content: "";
       background-color: #000000;
-      opacity: .55;
+      opacity: .65;
       top: 0;
       right: 0;
       bottom: 0;
@@ -31,14 +36,31 @@
       position: absolute;
       z-index: 1;
     }
-
-    @include media-breakpoint-up(lg) {
-      padding: 15rem 0;
-    }
   }
 
   h1 {
     font-weight: 400;
     letter-spacing: 5px;
+    margin-bottom: 1.5rem;
+  }
+
+  .custom-control {
+    &-title {
+      font-weight: 600;
+      color: #1ECBE0;
+    }
+  }
+
+  .form-group {
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    @include border-radius(0);
+    padding: 22px 75px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
   }
 }
