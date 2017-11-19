@@ -2,7 +2,7 @@
 /**
  * Single Page
  *
- * @package theme_name
+ * @package theprescript
  */
 
 ?>
@@ -22,5 +22,5 @@
   <div class="single__content content-style content-media-style">
     <?php the_content(); ?>
   </div>
-	<?php include( locate_template( 'template-parts/parts/google-rich-snippets.php' ) ); ?>
+  <?php include( locate_template( 'template-parts/parts/google-rich-snippets.php' ) ); ?>
 </section>

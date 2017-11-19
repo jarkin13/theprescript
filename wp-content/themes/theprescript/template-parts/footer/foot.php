@@ -2,11 +2,12 @@
   /**
    * Footer
    *
-   * @package theme_name
+   * @package theprescript
    */
 
 ?>
 
-<?php wp_footer();?>
+<?php wp_footer(); ?>
+</div>
 </body>
 </html>

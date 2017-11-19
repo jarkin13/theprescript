@@ -56,7 +56,11 @@ const allModules = {
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        use: ['css-loader', 'postcss-loader', 'sass-loader']
+        use: [
+          {loader: 'css-loader', options: {sourceMap: true}},
+          {loader: 'postcss-loader', options: {sourceMap: true}},
+          {loader: 'sass-loader', options: {sourceMap: true}}
+        ]
       })
     }
   ]
@@ -104,6 +108,11 @@ if (!DEV) {
   );
 }
 
+let devtool = '';
+if (DEV) {
+  devtool = 'source-map';
+}
+
 module.exports = [
 
   // Theme Skin
@@ -118,9 +127,8 @@ module.exports = [
       publicPath: themePublicPath,
       filename: outputJs
     },
-
+    devtool,
     module: allModules,
-
     plugins: allPlugins
   }
 ];

@@ -1,0 +1,52 @@
+// Core
+$logo-url: '../images/logo.svg';
+$logo-width: 163px;
+$logo-height: 71px;
+$max-width: 90%;
+$heading-margin-y: 2.5rem;
+$footer-margin-y: $heading-margin-y;
+
+// Color
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$primary: $gray-500;
+
+// Fonts
+$font-family-sans-serif:'proxima-nova', sans-serif;
+$font-weight-thin: 100;
+$font-weight-semibold: 600;
+$font-size-sm: 0.775rem;
+
+// Navbar
+$navbar-padding-y: 2rem;
+$navbar-padding-x: 15px;
+$navbar-max-width: $max-width;
+
+// Hero
+$hero-image-bg-padding-y: 10rem;
+$hero-image-bg-lg-padding-y: $hero-image-bg-padding-y + 2rem;
+
+// Section
+$section-padding-y: 2rem;
+$section-heading-margin-y: $heading-margin-y;
+$section-max-width: $max-width;
+
+// Input
+$input-border-radius: 0;
+$input-placeholder-color: $gray-400;
+
+$input-padding-y: .375rem;
+$input-padding-x: .75rem;
+$input-btn-padding-x: 3rem;
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x-sm: 3rem;
+$input-btn-padding-y-sm: .75rem;
+
+// Buttons
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-padding-x: 2.5rem;
+
+// Forms
+$form-group-margin-bottom: 2rem;
+$form-footer-margin-y: $footer-margin-y;

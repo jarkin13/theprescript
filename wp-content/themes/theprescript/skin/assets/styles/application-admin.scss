@@ -1,13 +1,7 @@
 /* stylelint-disable */
 
 // Utils
-@import 'utils/colors';
-@import 'utils/shared-variables';
-@import 'utils/functions';
-@import 'utils/mixins';
-@import 'utils/placeholders';
-
+@import 'utils';
 
 @import 'admin/login';
 @import 'admin/editor';
-
