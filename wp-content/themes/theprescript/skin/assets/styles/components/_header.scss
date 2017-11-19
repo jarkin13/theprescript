@@ -2,10 +2,10 @@
   max-width: 90%;
 
   .nav-brand {
-    @include element('logo-img')  {
+    /*@include element('logo-img')  {
       width: 100%;
       max-width: 163px;
-    }
+    }*/
   }
 
   &-hero {

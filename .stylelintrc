@@ -106,7 +106,7 @@
     ],
     "comment-whitespace-inside": "always",
 
-    "indentation": 2,
+    "indentation":  [2, { "severity": "warning" } ] },
     "max-line-length": 250,
     "max-nesting-depth": 5,
     "no-duplicate-selectors": true,
