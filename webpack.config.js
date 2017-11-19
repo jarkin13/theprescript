@@ -94,6 +94,8 @@ const allPlugins = [
   // }])
 ];
 
+let devTools = '';
+
 // Use only for production build
 if (!DEV) {
   allPlugins.push(
@@ -102,6 +104,10 @@ if (!DEV) {
       sourceMap: true
     })
   );
+}
+
+if (DEV) {
+  devTools = 'source-map';
 }
 
 module.exports = [
@@ -118,7 +124,7 @@ module.exports = [
       publicPath: themePublicPath,
       filename: outputJs
     },
-
+    devtool: devTools,
     module: allModules,
 
     plugins: allPlugins
