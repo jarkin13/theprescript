@@ -15,7 +15,7 @@
           <p class="mb-0">Sign up to get notified & other great dating tips.</p>
         </div>
         <div class="row">
-          <form class="form form-newsletter col-10 col-md-8 col-lg-4 mx-auto">
+          <form class="form form-newsletter col-12 col-md-9 col-lg-4 mx-auto">
             <div class="row">
               <div class="form-group col-md">
                 <label for="first">First Name</label>

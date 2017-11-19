@@ -17,11 +17,10 @@
       background-position: center center;
       margin-bottom: 0;
       margin-top: 0;
-      padding-top: $section-padding-y + 1rem;
-      padding-bottom: $section-padding-y + 1rem;
+      padding: $section-hero-padding-y $section-hero-padding-x;
 
       @include media-breakpoint-up(md) {
-        paddding: 0;
+        padding: 0;
       }
 
       > div {
