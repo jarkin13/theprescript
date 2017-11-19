@@ -1,6 +1,7 @@
 .d-flex {
   &-fill {
     width: 100%;
+
     @include media-breakpoint-up(md) {
       height: 100%;
       flex-direction: row;
