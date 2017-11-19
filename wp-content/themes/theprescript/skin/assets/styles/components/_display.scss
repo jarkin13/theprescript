@@ -1,0 +1,13 @@
+.d-flex {
+  &-fill {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      height: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
+      padding-bottom: $section-padding-y + 1rem;
+    }
+  }
+}

@@ -7,9 +7,10 @@
 
  get_header();
 ?>
-
-  <main class="main flexbox-item fill-area flexbox-item-grow">
-    <section class="section section-hero-image-bg flexbox-item-grow flexbox-item-grow-content d-flex align-items-md-center" style="background-image: url('<?php echo the_field('home_image', 'option'); ?>')">
+  <!--flexbox-item flexbox-item-fill-area flexbox-item-grow -->
+  <main class="main d-flex d-flex-fill">
+    <!-- section section-hero-image-bg flexbox-item-grow flexbox-item-grow-content d-flex -->
+    <section class="section section-hero-image-bg d-flex align-items-md-center" style="background-image: url('<?php echo the_field('home_image', 'option'); ?>')">
       <div class="content mx-auto">
         <div class="section-heading">
           <h3 class="mb-2">We’re launching soon!</h3>
