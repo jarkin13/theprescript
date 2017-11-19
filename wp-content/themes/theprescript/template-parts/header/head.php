@@ -10,6 +10,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+<!-- Font -->
+<link rel="stylesheet" href="https://use.typekit.net/gve7oml.css">
+
 <!-- Mobile chrome -->
 <meta name="theme-color" content="#C3151B">
 

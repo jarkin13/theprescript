@@ -3,7 +3,14 @@
     display: none;
   }
 
+  &-newsletter {
+    @include media-breakpoint-up(lg) {
+      min-width: 475px;
+    }
+  }
+
   .form-control {
+    padding: $input-padding-y $input-padding-x;
     color: #FFFFFF;
     background: transparent;
     border-top: 0;
@@ -16,5 +23,9 @@
       outline: 0;
       box-shadow: none;
     }
+  }
+
+  &-footer {
+    margin-top: $form-footer-margin-y + 1rem;
   }
 }
