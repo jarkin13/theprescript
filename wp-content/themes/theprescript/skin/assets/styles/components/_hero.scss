@@ -1,0 +1,30 @@
+.hero {
+  &-image-bg {
+    color: #FFFFFF;
+    padding: $hero-image-bg-padding-y 0;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    background-position: center center;
+
+    @include media-breakpoint-up(lg) {
+      padding: $hero-image-bg-lg-padding-y 0;
+    }
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      background-color: rgba(#000000, .65);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}

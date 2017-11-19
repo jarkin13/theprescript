@@ -1,0 +1,24 @@
+// Core
+$logo-url: '../images/logo.svg';
+$logo-width: 163px;
+$logo-height: 71px;
+$max-width: 90%;
+
+// Color
+$gray-400: #ced4da;
+
+// Navbar
+$navbar-padding-y: 2rem;
+$navbar-padding-x: 15px;
+$navbar-max-width: $max-width;
+
+// Hero
+$hero-image-bg-padding-y: 10rem;
+$hero-image-bg-lg-padding-y: $hero-image-bg-padding-y + 2rem;
+
+// Section
+$section-max-width: $max-width;
+
+// Input
+$input-border-radius: 0;
+$input-placeholder-color: $gray-400;

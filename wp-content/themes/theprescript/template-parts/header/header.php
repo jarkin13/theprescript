@@ -13,11 +13,9 @@
 ?>
 <header class="header header-main mx-auto">
   <nav class="navbar navbar-expand-md">
-    <div class="col-auto">
+    <div class="col-auto p-0">
       <div class="nav-brand">
-        <a class="nav-brand__logo-link" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( $blog_name ); ?>">
-          <img class="nav-brand__logo-img" src="<?php echo esc_url( IMAGE_URL . 'logo.svg' ); ?>" title="<?php echo esc_attr( $blog_name ); ?> - <?php echo esc_attr( $blog_description ); ?>" alt="<?php echo esc_attr( $blog_name ); ?> - <?php echo esc_attr( $blog_description ); ?>" />
-        </a>
+        <a class="logo" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( $blog_name ); ?>"></a>
       </div>
     </div>
     <button class="btn btn-link navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">

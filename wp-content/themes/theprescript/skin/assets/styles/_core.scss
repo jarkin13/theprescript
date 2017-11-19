@@ -1,0 +1,11 @@
+img {
+  max-width: 100%;
+}
+
+.logo {
+  background-image: url($logo-url);
+  background-size: cover;
+  width: $logo-width;
+  height: $logo-height;
+  display: block;
+}
