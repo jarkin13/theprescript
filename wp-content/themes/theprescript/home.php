@@ -19,19 +19,19 @@
             <div class="row">
               <div class="form-group col-md">
                 <label for="first">First Name</label>
-                <input type="text" id="first" name="first" class="form-control" placeholder="First Name">
+                <input type="text" id="first" name="first" class="form-control field" placeholder="First Name" required>
               </div>
               <div class="form-group col-md">
                 <label for="last">Last Name</label>
-                <input type="text" id="last" name="last" class="form-control" placeholder="Last Name">
+                <input type="text" id="last" name="last" class="form-control field" placeholder="Last Name" required>
               </div>
             </div>
             <div class="form-group mb-0">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
+              <input type="email" id="email" name="email" class="form-control field" placeholder="Email Address" required>
             </div>
             <div class="form-footer">
-              <button class="btn btn-sm btn-primary ">Subscribe</button>
+              <button id="subscribe" class="btn btn-sm btn-primary" type="submit">Subscribe</button>
             </div>
           </form>
         </div>

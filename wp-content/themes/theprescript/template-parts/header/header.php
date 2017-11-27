@@ -6,7 +6,6 @@
  */
 
 ?>
-
 <?php
   $blog_name = get_bloginfo( 'name' );
   $blog_description = get_bloginfo( 'description' );
