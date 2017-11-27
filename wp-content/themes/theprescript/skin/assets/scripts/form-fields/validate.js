@@ -39,13 +39,13 @@ export default class Validate {
 $(function() {
   const validate = new Validate();
 
-  // On page load set
-  validate.$input.each(function() {
-    const id = $(this).attr('id');
-    validate.init(id);
+  validate.$input.map((i, el) => {
+    const id = $(el).attr('id');
+    return validate.init(id);
   });
-  validate.$input.bind('input', function(e) {
-    console.log('hey');
+
+  validate.$input.bind('keyup', (e) => {
+    console.log(e.target.value);
   });
 
 });

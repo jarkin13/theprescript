@@ -12,7 +12,7 @@
       <div class="content mx-auto">
         <div class="section-heading">
           <h3 class="mb-2">We’re launching soon!</h3>
-          <p class="mb-0">Sign up to get notified & other great dating tips.</p>
+          <p class="mx-auto">The Prescript is a dating advice resource written by real women for real women. Sign up to get notified once we launch!</p>
         </div>
         <div class="row">
           <form class="form form-newsletter col-12 col-md-9 col-lg-4 mx-auto">
