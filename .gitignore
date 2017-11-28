@@ -33,7 +33,7 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 /wp-content/themes/index.php
-/wp-content/themes/theprescript/inc/subscribe.php
+/wp-content/themes/theprescript/inc/helpers/keys.php
 
 # Ignore these plugins from the core
 wp-content/plugins/hello.php

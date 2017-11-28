@@ -23,7 +23,8 @@ $(function() {
       first,
       last,
       email,
-      action: 'prescript_subscribe'
+      action: 'prescript_subscribe',
+      mailchimpKeys: themeLocalization.mailchimpkeys
     };
 
     $.ajax({

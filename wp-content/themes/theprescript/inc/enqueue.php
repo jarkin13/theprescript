@@ -4,15 +4,16 @@
  *
  * @package theprescript
  */
+require(get_stylesheet_directory() . '/inc/helpers/keys.php');
 
 add_action( 'wp_enqueue_scripts', 'inf_register_scripts', 1 );
 
 if ( ! function_exists( 'inf_register_scripts' ) ) {
-
   /**
    * Register global theme scripts
    */
   function inf_register_scripts() {
+    $mailchimpkeys = ps_get_mailchimp_keys();
 
     // jQuery.
     $jquery_cdn = 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js';
@@ -42,6 +43,7 @@ if ( ! function_exists( 'inf_register_scripts' ) ) {
     wp_localize_script(
         'scripts', 'themeLocalization', array(
             'ajaxurl' => admin_url( 'admin-ajax.php' ),
+            'mailchimpkeys' => $mailchimpkeys
         )
     );
   }
