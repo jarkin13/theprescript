@@ -28,7 +28,7 @@ function prescript_subscribe_function() {
 
     if ( !is_wp_error($user_id) ) {
       $response['user'] = $user_id;
-      $api_key = 'e212fffba981598150ae2af408533f80-us17';
+      $api_key = '0e742fc97e825e779b9791c17da157f8-us17';
       $list_id = '99a90b8b05';
       $MailChimp = new MailChimp($api_key);
       $mailchimp_data = [

@@ -35,7 +35,7 @@ $(function() {
         const response = $.parseJSON(result);
         if (response.error.length <= 0) {
           validate.$form.hide();
-          $('.success').html('<p>Thank you for subscibing, check back for updates.</p>');
+          $('.success').html("<p>Thanks, we can't wait to help you navigate the tricky world of relationships. Expect a launch email soon!</p>");
           return;
         }
         if (response.error.user) {
