@@ -33,7 +33,7 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 /wp-content/themes/index.php
-/wp-content/themes/theprescript/skin/inc/subscribe.php
+/wp-content/themes/theprescript/inc/subscribe.php
 
 # Ignore these plugins from the core
 wp-content/plugins/hello.php
