@@ -21,3 +21,11 @@ export default class Submit {
     return this.getInputById(id).closest(this.formContainer);
   }
 }
+
+$(function() {
+  const submit = new Submit();
+
+  submit.$input.on('click', function(e) {
+    e.preventDefault();
+  });
+});

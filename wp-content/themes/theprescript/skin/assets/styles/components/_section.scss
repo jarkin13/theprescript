@@ -5,7 +5,11 @@
   &-heading {
     margin-bottom: $section-heading-margin-y;
 
-    p { width: 70%; }
+    p {
+      @include media-breakpoint-up(md) {
+        width: 70%;
+      }
+    }
   }
 
   &-hero {

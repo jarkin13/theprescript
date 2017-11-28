@@ -42,4 +42,5 @@ function inf_after_setup_theme_init() {
   require get_parent_theme_file_path( '/inc/pagination.php' );
   require get_parent_theme_file_path( '/inc/theme-options.php' );
   require get_parent_theme_file_path( '/inc/widgets.php' );
+  require get_parent_theme_file_path( '/inc/subscribe.php' );
 }

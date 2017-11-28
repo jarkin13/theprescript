@@ -16,6 +16,10 @@
         </div>
         <div class="row">
           <form class="form form-newsletter col-12 col-md-9 col-lg-4 mx-auto">
+            <div class="error text-center">
+              <p class="error--user"></p>
+              <p class="error--mailchimp"></p>
+            </div>
             <div class="row">
               <div class="form-group col-md">
                 <label for="first">First Name</label>
@@ -35,6 +39,7 @@
             </div>
           </form>
         </div>
+        <div class="success text-center"></div>
       </div>
     </section>
   </main>

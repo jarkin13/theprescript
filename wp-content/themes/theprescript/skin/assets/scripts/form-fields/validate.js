@@ -25,7 +25,9 @@ export default class Validate {
   getContainerByInput(id) {
     return this.getInputById(id);
   }
-
+  getInputValue(id) {
+    return this.getContainerByInput(id)[0].value;
+  }
   init(id) {
     const escapedID = this.escapeString(id);
     const $input = this.getInputById(escapedID);
@@ -45,7 +47,6 @@ $(function() {
   });
 
   validate.$input.bind('keyup', (e) => {
-    console.log(e.target.value);
+    //console.log(e.target.value);
   });
-
 });
