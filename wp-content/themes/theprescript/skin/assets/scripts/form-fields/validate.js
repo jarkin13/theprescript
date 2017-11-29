@@ -47,6 +47,17 @@ $(function() {
   });
 
   validate.$input.bind('keyup', (e) => {
-    //console.log(e.target.value);
+    const error = validate.$input.map((i, el) => {
+      const invalid = $(el).is(':invalid');
+      if (invalid) {
+        return true;
+      }
+    });
+
+    if (error.length > 0) {
+      validate.$form.find('button[type=submit]').prop('disabled', true);
+    } else {
+      validate.$form.find('button[type=submit]').prop('disabled', false);
+    }
   });
 });

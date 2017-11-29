@@ -15,7 +15,7 @@ $(function() {
     });
 
     if (error.length > 0) return;
-
+    
     const first = validate.getInputValue('first');
     const last = validate.getInputValue('last');
     const email = validate.getInputValue('email');

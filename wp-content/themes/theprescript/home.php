@@ -35,7 +35,7 @@
               <input type="email" id="email" name="email" class="form-control field" placeholder="Email Address" required>
             </div>
             <div class="form-footer">
-              <button id="subscribe" class="btn btn-sm btn-primary" type="submit">Subscribe</button>
+              <button id="subscribe" class="btn btn-sm btn-primary" type="submit" disabled>Subscribe</button>
             </div>
           </form>
         </div>
