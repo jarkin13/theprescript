@@ -52,7 +52,8 @@ if (!DEV) {
   allPlugins.push(
     new UglifyJSPlugin({
       comments: false,
-      sourceMap: false
+      sourceMap: false,
+      warnings: false
     })
   );
 }
@@ -61,7 +62,7 @@ const allModules = {
   rules: [
     {
       test: /\.js$/,
-      use: 'babel-loader',
+      use: ['babel-loader', 'eslint-loader'],
       exclude: /node_modules/
     },
     {
@@ -81,7 +82,7 @@ const allModules = {
         use: [
           {loader: 'css-loader', options: {sourceMap: true}},
           {loader: 'postcss-loader', options: {sourceMap: true}},
-          {loader: 'sass-loader', options: {sourceMap: true}}
+          {loader: 'sass-loader', options: {sourceMap: true,}}
         ]
       })
     }
@@ -106,6 +107,7 @@ module.exports = [
     },
     devtool,
     module: allModules,
-    plugins: allPlugins
+    plugins: allPlugins,
+    stats: 'minimal'
   }
 ];

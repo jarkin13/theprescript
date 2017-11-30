@@ -96,6 +96,8 @@ __webpack_require__(4);
 "use strict";
 
 
+console.log('hey');
+
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {

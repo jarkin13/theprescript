@@ -6,8 +6,11 @@ const themeName = 'theprescript-theme';
 const fontsPath = path.join(__dirname, `wp-content/themes/${themeName}/skin/assets/fonts`);
 
 const plugins = [
-  require('autoprefixer'),
-  require('css-mqpacker')
+  require('postcss-import')(),
+  require('stylelint')(),
+  require("postcss-cssnext")(),
+  require('css-mqpacker')(),
+  require("postcss-reporter")({ clearReportedMessages: true })
 ];
 
 // Use only for production build
