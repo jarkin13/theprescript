@@ -3,6 +3,7 @@ const webpack            = require('webpack');
 const BrowserSync        = require('browser-sync-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin  = require('extract-text-webpack-plugin');
+const UglifyJSPlugin     = require('uglifyjs-webpack-plugin');
 
 // Paths
 const DEV                = process.env.NODE_ENV !== 'production';
@@ -46,6 +47,15 @@ const allPlugins = [
     }
   })
 ]
+
+if (!DEV) {
+  allPlugins.push(
+    new UglifyJSPlugin({
+      comments: false,
+      sourceMap: false
+    })
+  );
+}
 
 const allModules = {
   rules: [
