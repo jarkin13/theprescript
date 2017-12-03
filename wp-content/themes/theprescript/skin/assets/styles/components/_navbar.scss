@@ -1,3 +1,39 @@
 .navbar {
+  max-width: $max-width;
   margin: 0 auto;
+
+  @include media-breakpoint-down(xs) {
+    padding-top: .5rem;
+  }
+
+  .nav-brand {
+    @include media-breakpoint-up(sm) {
+      margin-left: 80px;
+    }
+  }
+}
+
+.social {
+  display: none;
+  font-size: 15px;
+
+  a {
+    color: #222222;
+    padding-left: 5px;
+  }
+
+  &--web {
+    @include media-breakpoint-up(sm) {
+      display: block;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
+
+  &--mobile {
+    @include media-breakpoint-down(xs) {
+      padding-top: 1rem;
+      display: block;
+    }
+  }
 }

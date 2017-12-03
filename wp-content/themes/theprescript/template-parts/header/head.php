@@ -12,6 +12,7 @@
 
 <!-- Font -->
 <link rel="stylesheet" href="https://use.typekit.net/gve7oml.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
 
 <!-- Mobile chrome -->
 <meta name="theme-color" content="#C3151B">
