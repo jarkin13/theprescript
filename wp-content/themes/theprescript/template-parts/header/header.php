@@ -11,9 +11,11 @@
   $blog_description = get_bloginfo( 'description' );
 ?>
 <div class="container-parent">
-  <div class="social social--mobile d-flex justify-content-center">
-    <div class="p-2"><a href="//instagram.com/the.prescript" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-    <div class="p-2"><a href="//www.facebook.com/The-Prescript-2029491183952958/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+  <div class="social social--mobile">
+    <div class="d-flex justify-content-center">
+      <div class="p-2"><a href="//instagram.com/the.prescript" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+      <div class="p-2"><a href="//www.facebook.com/The-Prescript-2029491183952958/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+    </div>
   </div>
   <header class="header header-main">
     <nav class="navbar navbar-expand-md justify-content-between">
