@@ -25,7 +25,7 @@
           <a class="logo mx-auto" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( $blog_name ); ?>"></a>
         </div>
       </div>
-      <div class="col-auto social social--web">
+      <div class="col-auto social social--web p-0">
         <a href="//instagram.com/the.prescript" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="//www.facebook.com/The-Prescript-2029491183952958/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
       </div>
