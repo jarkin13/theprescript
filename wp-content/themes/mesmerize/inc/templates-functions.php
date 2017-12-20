@@ -246,18 +246,13 @@ function mesmerize_get_footer_content($footer = null)
 
 function mesmerize_get_footer_copyright()
 {
-    $copyrightText = __('Built using WordPress and the <a target="_blank" href="%1$s" class="mesmerize-theme-link">Mesmerize Theme</a>', 'mesmerize');
-
-    $copyrightText = sprintf($copyrightText, 'http://extendthemes.com/mesmerize');
-
-
     $previewAtts = "";
 
     if (mesmerize_is_customize_preview()) {
         $previewAtts = 'data-footer-copyright="true"';
     }
 
-    $copyright = '<p ' . $previewAtts . ' class="copyright">&copy;&nbsp;' . "&nbsp;" . date_i18n(__('Y', 'mesmerize')) . '&nbsp;' . esc_html(get_bloginfo('name')) . '.&nbsp;' . wp_kses_post($copyrightText) . '</p>';
+    $copyright = '<p ' . $previewAtts . ' class="copyright">&copy;&nbsp;' . "&nbsp;" . date_i18n(__('Y', 'mesmerize')) . '&nbsp;' . esc_html(get_bloginfo('name')) . '.&nbsp;' . '</p>';
 
     return apply_filters('mesmerize_get_footer_copyright', $copyright, $previewAtts);
 }
@@ -376,4 +371,3 @@ function mesmerize_is_customize_preview()
     return $is_preview;
 
 }
-
