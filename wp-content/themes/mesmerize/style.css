@@ -574,7 +574,7 @@ body,
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   color: #8E9DAE;
   background-color: transparent;
 }
@@ -588,7 +588,7 @@ a:hover {
 }
 
 h1.title, h1, h2, h3, h4, h5, .comment-author .fn, h6 {
-  font-family: "Muli", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-weight: 600;
   color: #3C424F;
   text-rendering: optimizeLegibility;
@@ -7755,7 +7755,7 @@ body.custom-background,
 .mesmerize-front-page.mesmerize-content-padding .page-content,
 .mesmerize-inner-page .page-content,
 .mesmerize-inner-page .content {
-  background-color: #F5FAFD;
+  background-color: #f2f2f2;
 }
 
 /* GENERAL CONTENT STYLE */
@@ -8983,7 +8983,7 @@ div.section-separator-bottom {
 
 .card.bordered, .post-item table.card, .card[class*="bottom-border-"] {
   box-shadow: none;
-  border: 1px solid #e0e1e1;
+  text-align: center;
 }
 
 .card.bordered.y-move, .post-item table.card.y-move, .card.y-move[class*="bottom-border-"] {
