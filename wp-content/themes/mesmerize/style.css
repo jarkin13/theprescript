@@ -9457,6 +9457,10 @@ a[data-fancybox] {
   }
 }
 
+/* OVERRIDES */
 .social-icon > a > i.fa {
   font-size: 1.5em;
+}
+.header-wrapper .header-homepage {
+  background-position: center -200px;
 }
