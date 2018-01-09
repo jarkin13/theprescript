@@ -15,7 +15,7 @@ add_action("mesmerize_customize_register_options", function () {
             "header",
             6,
         ),
-        
+
         "mesmerize_front_page_header_subtitle_options" => array(
             "header_background_chooser",
             "header",
@@ -116,7 +116,7 @@ function mesmerize_print_header_media_frame($media)
         return;
     }
 
-    
+
     $frame_width = intval(get_theme_mod('header_content_frame_width', "100"));
     $frame_height = intval(get_theme_mod('header_content_frame_height', "100"));
 
@@ -260,12 +260,13 @@ add_action('wp_head', 'mesmerize_print_background_content_color', PHP_INT_MAX);
 
 function mesmerize_print_background_content_color()
 {
+    //background-color: #<?php echo str_replace("#", "", get_background_color());  ?>;
     ?>
         <style data-name="background-content-colors">
             .mesmerize-inner-page .page-content,
             .mesmerize-inner-page .content,
             .mesmerize-front-page.mesmerize-content-padding .page-content {
-               background-color: #<?php echo str_replace("#", "", get_background_color());  ?>;
+               background-color: #ffffff;
             }
         </style>
     <?php
