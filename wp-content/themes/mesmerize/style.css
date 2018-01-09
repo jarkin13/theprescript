@@ -8983,7 +8983,7 @@ div.section-separator-bottom {
 
 .card.bordered, .post-item table.card, .card[class*="bottom-border-"] {
   box-shadow: none;
-  text-align: center;
+  text-align: left;
 }
 
 .card.bordered.y-move, .post-item table.card.y-move, .card.y-move[class*="bottom-border-"] {

@@ -3,8 +3,8 @@
 function mesmerize_get_default_colors()
 {
     return array(
-        array("label" => esc_html__("Primary", "mesmerize"), "name" => "color1", "value" => "#03a9f4"),
-        array("label" => esc_html__("Secondary", "mesmerize"), "name" => "color2", "value" => "#FF9800"),
+        array("label" => esc_html__("Primary", "mesmerize"), "name" => "color1", "value" => "#a3a5a6"),
+        array("label" => esc_html__("Secondary", "mesmerize"), "name" => "color2", "value" => "#d2b25b"),
         array("label" => esc_html__("color3", "mesmerize"), "name" => "color3", "value" => "#fbc02d"),
         array("label" => esc_html__("color4", "mesmerize"), "name" => "color4", "value" => "#8c239f"),
         array("label" => esc_html__("color5", "mesmerize"), "name" => "color5", "value" => "#ff3369"),

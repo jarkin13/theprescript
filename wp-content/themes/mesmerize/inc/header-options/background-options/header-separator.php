@@ -76,7 +76,7 @@ function mesmerize_header_separator_options($section, $prefix, $group, $inner, $
         'choices'  => array(
             'alpha' => true,
         ),
-        'default'  => $inner ? "#F5FAFD" : "#ffffff",
+        'default'  => "#ffffff",
         'output'   => array(
             array(
                 'element'  => $inner ? "body .header .svg-white-bg" : ".mesmerize-front-page .header-separator .svg-white-bg",
