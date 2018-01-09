@@ -1,7 +1,5 @@
 <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
     <div class="post-content-single">
-        <h1><?php mesmerize_single_item_title(); ?></h1>
-        <?php get_template_part('template-parts/content-post-single-header') ?>
         <div class="post-content-inner">
             <?php
             if (has_post_thumbnail()) {
