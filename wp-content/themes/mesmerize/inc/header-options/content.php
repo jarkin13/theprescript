@@ -260,7 +260,7 @@ add_action('wp_head', 'mesmerize_print_background_content_color', PHP_INT_MAX);
 
 function mesmerize_print_background_content_color()
 {
-    //background-color: #<?php echo str_replace("#", "", get_background_color());  ?>;
+    /*background-color: #<?php echo str_replace("#", "", get_background_color()) ;?>;*/
     ?>
         <style data-name="background-content-colors">
             .mesmerize-inner-page .page-content,
