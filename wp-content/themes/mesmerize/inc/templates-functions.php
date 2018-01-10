@@ -297,12 +297,15 @@ function mesmerize_print_archive_entry_class()
     $hasBigClass  = (is_sticky() || ($index === 0 && apply_filters('mesmerize_archive_post_highlight', true)));
     $showBigEntry = (is_archive() || is_home());
 
-    if ($showBigEntry && $hasBigClass) {
+    /*if ($showBigEntry && $hasBigClass) {
         $classes[] = "col-sm-12 col-md-12";
     } else {
         $postsPerRow = apply_filters('mesmerize_posts_per_row', 2);
         $classes[]   = "col-sm-12 col-md-" . (12 / intval($postsPerRow));
-    }
+    }*/
+
+    $postsPerRow = apply_filters('mesmerize_posts_per_row', 3);
+    $classes[]   = "col-sm-12 col-md-" . (12 / intval($postsPerRow));
 
     $classes = apply_filters('mesmerize_archive_entry_class', $classes);
 
@@ -320,12 +323,15 @@ function mesmerize_print_masonry_col_class($echo = false)
     $showBigEntry = (is_archive() || is_home());
 
     $class = "";
-    if ($showBigEntry && $hasBigClass) {
+    $postsPerRow = apply_filters('mesmerize_posts_per_row', 3);
+    $class       = "col-sm-12.col-md-" . (12 / intval($postsPerRow));
+
+    /*if ($showBigEntry && $hasBigClass) {
         $class = "col-md-12";
     } else {
         $postsPerRow = apply_filters('mesmerize_posts_per_row', 2);
         $class       = "col-sm-12.col-md-" . (12 / intval($postsPerRow));
-    }
+    }*/
 
     if ($echo) {
         echo esc_attr($class);
