@@ -5,7 +5,6 @@
             if (has_post_thumbnail()) {
                 the_post_thumbnail('post-thumbnail', array("class" => "space-bottom-small space-bottom-xs"));
             }
-
             the_content();
 
             wp_link_pages(array(
@@ -18,7 +17,6 @@
             ));
             ?>
         </div>
-
         <?php echo get_the_tag_list('<p class="tags-list"><i data-cp-fa="true" class="font-icon-25 fa fa-tags"></i>&nbsp;', ' ', '</p>'); ?>
     </div>
 

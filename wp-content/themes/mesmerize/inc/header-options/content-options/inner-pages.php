@@ -110,6 +110,7 @@ function mesmerize_print_inner_pages_header_content()
     <div class="inner-header-description gridContainer">
         <div class="row header-description-row">
     <div class="col-xs col-xs-12">
+        <h5 class="hero-cat"><?php the_category(' ', ' '); ?></h5>
         <h1 class="hero-title">
             <?php echo mesmerize_title(); ?>
         </h1>
