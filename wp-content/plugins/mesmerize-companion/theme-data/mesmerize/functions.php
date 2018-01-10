@@ -56,11 +56,13 @@ function mesmerize_companion_latest_news_excerpt_length()
     return 30;
 }
 
+/* ADD TO CHILD THEME */
 function mesmerize_companion_latest_excerpt_more()
 {
-    return "[&hellip;]";
+    return " &hellip;";
 }
 
+/* ADD TO CHILD THEME */
 function mesmerize_companion_latest_news($attrs)
 {
     ob_start(); ?>
@@ -97,7 +99,14 @@ function mesmerize_companion_latest_news($attrs)
             ?>
             <div id="post-<?php the_ID(); ?>" class="col-sm-<?php echo $tablet_cols; ?> col-md-<?php echo $cols; ?> space-bottom space-bottom-xs">
                 <div class="post-content <?php echo $atts['item_class']; ?>">
-                    <?php mesmerize_print_post_thumb(); ?>
+                    <div class="post-thumb-container">
+                      <?php mesmerize_print_post_thumb(); ?>
+                      <div class="read-more-container">
+                        <a class="read-more" href="<?php echo get_permalink(); ?>">
+                            <span data-theme="latest_news_read_more"><?php \Mesmerize\Companion::echoMod('latest_news_read_more', 'Read'); ?></span>
+                        </a>
+                      </div>
+                    </div>
                     <div class="col-padding">
                         <h3 class="post-title">
                             <a href="<?php the_permalink(); ?>" rel="bookmark">
@@ -105,9 +114,6 @@ function mesmerize_companion_latest_news($attrs)
                             </a>
                         </h3>
                         <?php the_excerpt(); ?>
-                        <a class="read-more" href="<?php echo get_permalink(); ?>">
-                            <span data-theme="latest_news_read_more"><?php \Mesmerize\Companion::echoMod('latest_news_read_more', 'Read more'); ?></span>
-                        </a>
                     </div>
                 </div>
             </div>
