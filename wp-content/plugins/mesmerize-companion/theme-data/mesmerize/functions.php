@@ -100,7 +100,6 @@ function mesmerize_companion_latest_news($attrs)
             <div id="post-<?php the_ID(); ?>" class="col-sm-<?php echo $tablet_cols; ?> col-md-<?php echo $cols; ?> space-bottom space-bottom-xs">
                 <div class="post-content <?php echo $atts['item_class']; ?>">
                     <div class="post-thumb-container">
-                      <?php mesmerize_print_post_thumb(); ?>
                       <div class="read-more-container">
                         <a class="read-more" href="<?php echo get_permalink(); ?>">
                             <span data-theme="latest_news_read_more"><?php \Mesmerize\Companion::echoMod('latest_news_read_more', 'Read'); ?></span>
