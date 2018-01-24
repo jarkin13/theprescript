@@ -3,8 +3,6 @@
     <div id="post-<?php the_ID(); ?>" <?php post_class('blog-post card '); ?>>
         <div class="post-content">
 
-            <?php mesmerize_print_post_thumb(); ?>
-
             <div class="col-xs-12 col-padding col-padding-xs">
                 <h3 class="post-title">
                     <a href="<?php the_permalink(); ?>" rel="bookmark">
