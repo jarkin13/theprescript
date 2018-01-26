@@ -79,7 +79,7 @@ function mesmerize_print_header_title()
 
     if ($show) {
         //printf('<h1 class="hero-title">%1$s</h1>', $title);
-        $sub_title = "<h5>THE WOMAN'S RESOURCE FOR DATING</h5>";
+        $sub_title = "<h5>REAL LOVE ADVICE WRITTEN BY WOMEN FOR WOMEN</h5>";
         $types = '["dating advice.", "relationship advice.", "love advice.", "help being single.", "to vent."]';
         $header_title = 'I need ';
         $header_title .= '<span class="typewrite" data-period="2000" data-type=\''. $types .'\'><span class="wrap"></span></span>';
