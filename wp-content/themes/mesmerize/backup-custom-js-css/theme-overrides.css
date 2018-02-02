@@ -94,6 +94,10 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
   -ms-transform: translate(-50%, -50%)
 }
 
+#latest-news-1 .post-content {
+  text-align: center;
+}
+
 .read-more {
   font-family: "proxima-nova";
   color: #000;
@@ -112,7 +116,6 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 #latest-news-1 .read-more:hover {
   color: #d2b25b;
 }
-
 
 #latest-news-1 .post-thumb-container:hover > .post-thumbnail img {
   opacity: .5;
