@@ -6,6 +6,13 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/gve7oml.css">
+    <?php if( is_single() ) : ?>
+    <meta property="og:url"           content=<?php echo get_permalink(); ?> />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content=<?php echo get_the_title(); ?> />
+    <meta property="og:description"   content=<?php echo get_the_excerpt(); ?> />
+    <meta property="og:image"         content=<?php echo the_post_thumbnail_url() ?> />
+    <?php endif; ?>
 	<?php wp_head(); ?>
 </head>
 
