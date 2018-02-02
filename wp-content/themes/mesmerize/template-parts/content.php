@@ -13,9 +13,8 @@
                 </h3>
                 <?php //get_template_part('template-parts/content-list-post-meta'); ?>
 
-
                 <div class="post-excerpt">
-                    <?php the_excerpt(); ?>
+                  <?php the_excerpt(); ?>
                 </div>
             </div>
 

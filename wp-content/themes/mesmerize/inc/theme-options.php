@@ -387,3 +387,18 @@ function mesmerize_sanitize_boolean($value)
     // Everything else will map nicely to boolean.
     return (boolean)$value;
 }
+
+// remove read more from excerpts
+function mesmerize_custom_excerpt_more($more)
+{
+  global $post;
+}
+
+// all read more to all excerpts
+function mesmerize_excerpt_read_more_link($output)
+{
+  add_filter('excerpt_more', 'mesmerize_custom_excerpt_more');
+  global $post;
+  return $output . '<a href="'. get_permalink($post->ID) . '" class="read-more">Read More</a>';
+}
+add_filter('the_excerpt', 'mesmerize_excerpt_read_more_link');

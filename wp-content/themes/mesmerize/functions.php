@@ -44,7 +44,7 @@ function mesmerize_php_version_notice()
 if (version_compare(phpversion(), MESMERIZE_THEME_REQUIRED_PHP_VERSION, '>=')) {
     require_once get_template_directory() . "/inc/functions.php";
 
-     
+
 
     do_action("mesmerize_customize_register_options");
 }
