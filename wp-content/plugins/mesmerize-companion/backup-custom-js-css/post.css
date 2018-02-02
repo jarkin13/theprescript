@@ -1,0 +1,7 @@
+.single .post-content-inner img.inline-image {
+  width: 40%;
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  margin: 0;
+}

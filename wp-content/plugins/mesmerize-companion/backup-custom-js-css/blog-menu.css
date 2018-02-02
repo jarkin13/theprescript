@@ -1,0 +1,32 @@
+#blog_menu {
+  margin-left: 0;
+  margin-bottom: 25px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#blog_menu li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+#blog_menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+#blog_menu a:hover {
+  color: #d2b25b;
+}
+
+#blog_menu > .current_page_item > a,
+#blog_menu > .current-menu-item > a {
+    border-bottom: 3px solid #d2b25b;
+}
