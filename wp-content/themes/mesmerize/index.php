@@ -5,7 +5,7 @@
             <?php if ( is_home() || is_category() ) :
               wp_nav_menu(array(
                   'theme_location'  => 'blogmenu',
-                  'menu_id'         => 'main_menu',
+                  'menu_id'         => 'blog_menu',
                   'container_id'    => 'mainmenu_container',
                   'container_class' => 'row'
               ));
