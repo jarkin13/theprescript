@@ -2,6 +2,14 @@
 
     <div class="content blog-page">
         <div class="<?php mesmerize_page_content_wrapper_class(); ?>">
+            <?php if ( is_home() || is_category() ) :
+              wp_nav_menu(array(
+                  'theme_location'  => 'blogmenu',
+                  'menu_id'         => 'main_menu',
+                  'container_id'    => 'mainmenu_container',
+                  'container_class' => 'row'
+              ));
+            endif; ?>
             <div class="row">
                 <div class="col-xs-12 <?php mesmerize_posts_wrapper_class(); ?>">
                     <div class="post-list row">

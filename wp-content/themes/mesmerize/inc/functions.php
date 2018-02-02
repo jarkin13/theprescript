@@ -97,6 +97,7 @@ function mesmerize_setup()
 
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'mesmerize'),
+        'blogmenu' => esc_html__('Blog Menu', 'mesmerize'),
     ));
 
     include_once get_template_directory() . '/customizer/kirki/kirki.php';
@@ -555,8 +556,32 @@ function mesmerize_no_hamburdegr_menu_cb()
     ));
 }
 
+function mesmerize_filter_archive_title()
+{
+  return add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_category() ) {
+
+            $title = single_cat_title( '', false );
+
+        } elseif ( is_tag() ) {
+
+            $title = single_tag_title( '', false );
+
+        } elseif ( is_author() ) {
+
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+
+        }
+
+    return $title;
+
+  });
+}
+
+
 function mesmerize_title()
 {
+    mesmerize_filter_archive_title();
     $title = array(
         'title' => '',
     );
