@@ -115,6 +115,9 @@ function mesmerize_companion_latest_news($attrs)
                             </a>
                         </h3>
                         <?php the_excerpt(); ?>
+                        <a class="read-more" href="<?php echo get_permalink(); ?>">
+                          <span data-theme="latest_news_read_more"><?php \Mesmerize\Companion::echoMod('latest_news_read_more', 'Read more'); ?></span>
+                        </a>
                     </div>
                 </div>
             </div>
