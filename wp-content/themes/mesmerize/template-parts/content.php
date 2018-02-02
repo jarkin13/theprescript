@@ -14,7 +14,7 @@
                 <?php //get_template_part('template-parts/content-list-post-meta'); ?>
 
                 <div class="post-excerpt">
-                  <?php the_excerpt(); ?>
+                  <?php mesmerize_custom_excerpt(); ?>
                 </div>
             </div>
 

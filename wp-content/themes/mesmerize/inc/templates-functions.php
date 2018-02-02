@@ -377,3 +377,21 @@ function mesmerize_is_customize_preview()
     return $is_preview;
 
 }
+
+function mesmerize_custom_excerpt_more()
+{
+    return "";
+}
+
+function mesmerize_excerpt_read_more_link($output)
+{
+  global $post;
+  return $output . '<a href="'. get_permalink($post->ID) . '" class="read-more">Read More</a>';
+}
+
+function mesmerize_custom_excerpt()
+{
+  add_filter('excerpt_more', 'mesmerize_custom_excerpt_more');
+  add_filter('the_excerpt', 'mesmerize_excerpt_read_more_link');
+  return the_excerpt();
+}
