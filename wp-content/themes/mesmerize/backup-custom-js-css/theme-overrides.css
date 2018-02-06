@@ -59,6 +59,12 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 }
 
 /* HOMEPAGE */
+@media only screen and (min-width: 768px) {
+  .mesmerize-front-page .header-homepage {
+    padding-bottom: 0;
+  }
+}
+
 .header-homepage h5 {
   color: #ffffff;
 }
