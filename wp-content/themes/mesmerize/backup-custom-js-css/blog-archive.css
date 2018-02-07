@@ -30,3 +30,7 @@
 #blog_menu > .current-menu-item > a {
     border-bottom: 3px solid #d2b25b;
 }
+
+.bo-garden {
+  margin: 0 auto !important;
+}
