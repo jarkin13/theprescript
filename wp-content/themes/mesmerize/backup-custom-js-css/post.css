@@ -1,7 +1,22 @@
-.single .post-content-inner img.inline-image {
+.single .post-content-inner {
+  font-size: .75em;
+  color: #888888;
+}
+
+.single .post-content-inner img {
+  margin: 0;
+  width: 100%;
+}
+
+.single .post-content-inner .image-container {
+  margin: 0 auto 20px;
+  width: 70%;
+}
+
+.single .post-content-inner .inline-image-container {
   width: 40%;
   float: left;
   padding-right: 25px;
   padding-bottom: 25px;
-  margin: 0;
+  margin: 7px 0 0 0;
 }

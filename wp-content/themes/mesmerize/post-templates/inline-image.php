@@ -17,10 +17,19 @@ mesmerize_get_header(); ?>
                 <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
                     <div class="post-content-single">
                         <div class="post-content-inner">
+                            <div class="inline-image-container">
+                              <?php
+                              if (has_post_thumbnail()) {
+                                  the_post_thumbnail('post-thumbnail', array("class" => "space-bottom-small space-bottom-xs inline-image"));
+                              }
+
+                              if( $credit = get_field('photo_credit') ) {
+                                echo '<p class="photo-credit">Source: '. $credit .'</p>';
+                              }
+                              ?>
+                            </div>
+
                             <?php
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail('post-thumbnail', array("class" => "space-bottom-small space-bottom-xs inline-image"));
-                            }
                             the_content();
 
                             wp_link_pages(array(

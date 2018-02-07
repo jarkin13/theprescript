@@ -189,12 +189,6 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 }
 
 /* POSTS */
-.single .post-content-inner img {
-  width: 70%;
-  margin: 0 auto 3rem;
-  display: block;
-}
-
 .single .hero-cat {
   margin-bottom: 0;
 }
@@ -202,8 +196,4 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 .single .hero-cat a {
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.single .post-content-inner img {
-  width: 40%;
 }
