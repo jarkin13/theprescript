@@ -12,6 +12,19 @@
               }
               ?>
             </div>
+            <div class="post-author">
+              <?php
+              $userID = get_the_author_meta( 'ID' );
+              if( get_field('prescript_editor', 'user_' . $userID) ) :
+                echo '<img src="'. get_template_directory_uri() .'/assets/images/small-logo.png" class="prescript-editor"/>';
+                echo 'By The Prescript <br />';
+              else :
+                echo get_avatar( $userID, 32 );
+                echo 'By ' . get_the_author() . '<br />';
+              endif;
+              echo the_time( get_option( 'date_format' ) );
+              ?>
+            </div>
             <?php
             the_content();
 

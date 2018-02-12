@@ -1,19 +1,18 @@
-.single .post-content-inner {
-  font-size: .75em;
-  color: #888888;
-}
-
 .single .post-content-inner img {
   margin: 0;
   width: 100%;
 }
 
 .single .post-content-inner .image-container {
+  font-size: .75em;
+  color: #888888;
   margin: 0 auto 20px;
   width: 40%;
 }
 
 .single .post-content-inner .inline-image-container {
+  font-size: .75em;
+  color: #888888;
   width: 40%;
   float: left;
   padding-right: 25px;
@@ -24,4 +23,33 @@
 .quoted {
   margin-left: 100px;
   color: #555;
+}
+
+.single .post-content-inner .post-author {
+  text-align: center;
+  font-size: .6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.single .post-content-inner .post-author:after {
+    border: .1rem solid #000;
+    content: "";
+    display: block;
+    margin: 2rem auto 2rem;
+    width: 80px;
+}
+
+.single .post-content-inner .post-author img {
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.single .post-content-inner .post-author img.prescript-editor {
+  padding: 7px;
+  border: 1px solid #000000;
 }
