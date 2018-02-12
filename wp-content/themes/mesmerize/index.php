@@ -2,9 +2,11 @@
 
     <div class="content blog-page">
         <div class="<?php mesmerize_page_content_wrapper_class(); ?>">
-            <?php if ( is_home() || is_category() ) :
+            <?php
+            $catID = get_the_category()[0]->term_id;
+            if ( get_field('include_menu', 'category_' . $catID) ) :
               wp_nav_menu(array(
-                  'theme_location'  => 'blogmenu',
+                  'menu_id'  => get_field('include_menu', 'category_' . $catID),
                   'menu_id'         => 'blog_menu',
                   'container_id'    => 'mainmenu_container',
                   'container_class' => 'row'
