@@ -1,4 +1,3 @@
-
 <div class="<?php mesmerize_print_archive_entry_class(); ?>" data-masonry-width="<?php mesmerize_print_masonry_col_class(true); ?>">
     <div id="post-<?php the_ID(); ?>" <?php post_class('blog-post card '); ?>>
         <div class="post-content">
