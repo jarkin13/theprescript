@@ -184,7 +184,7 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
   opacity: 1;
 }
 
-.inner-header-description {
+.header > .inner-header-description {
   padding-bottom: 0;
   padding-top: 4%;
 }
@@ -330,3 +330,5 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 .template-products .col-products {
   margin-bottom: 50px;
 }
+
+.template-products
