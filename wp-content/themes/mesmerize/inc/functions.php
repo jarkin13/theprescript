@@ -326,6 +326,23 @@ function mesmerize_do_enqueue_assets()
         )
     );
 
+    mesmerize_enqueue_style(
+        'custom',
+        array(
+            'src'     => get_template_directory_uri() . '/assets/css/custom.css',
+            'has_min' => false,
+        )
+    );
+
+    mesmerize_enqueue_script(
+        'text-animation',
+        array(
+            'src'     => get_template_directory_uri() . '/assets/js/text-animation.js',
+            'deps'    => array(),
+            'has_min' => false,
+        )
+    );
+
     mesmerize_enqueue_script(
         $textDomain . '-smoothscroll',
         array(
