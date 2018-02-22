@@ -22,18 +22,12 @@
                           $i = 0;
                           while (have_posts()):
                               $i++;
-                              $col = 'col-sm-';
-                              if ( $i === 1 || $i %4 === 0 || ($i - 1) %4 === 0 ) :
-                                $col .= '9';
-                              else :
-                                $col .= '3';
-                              endif;
-
                               the_post();
-
-                              echo '<div class="' . $col . '">';
-                                get_template_part('template-parts/content-products', get_post_format());
-                              echo '</div>';
+                              if ( $i %2 === 0 ) :
+                                get_template_part('template-parts/content-products-right', get_post_format());
+                              else :
+                                get_template_part('template-parts/content-products-left', get_post_format());
+                              endif;
                           endwhile;
                         elseif (have_posts()):
                             while (have_posts()):
