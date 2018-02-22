@@ -5,7 +5,7 @@
   $template = get_field('template', 'category_' . $catID);
 ?>
 
-    <div class="content blog-page">
+    <div class="content blog-page template-<?php echo $template; ?>">
         <div class="<?php mesmerize_page_content_wrapper_class(); ?>">
 
           <?php
