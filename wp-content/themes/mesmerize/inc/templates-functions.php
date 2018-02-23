@@ -342,16 +342,20 @@ function mesmerize_print_masonry_col_class($echo = false)
     return esc_attr($class);
 }
 
-function mesmerize_print_post_thumb($classes = "")
+function mesmerize_print_post_thumb($classes = "", $link)
 {
 
     $show_placeholder = get_theme_mod('blog_show_post_thumb_placeholder', true);
     if ( ! has_post_thumbnail() && ! $show_placeholder) {
         return;
     }
+
+    if( !$link ) {
+      $link = get_the_permalink();
+    }
     ?>
     <div class="post-thumbnail">
-        <a href="<?php the_permalink(); ?>" class="post-list-item-thumb <?php echo esc_attr($classes); ?>">
+        <a href="<?php echo $link ?>" class="post-list-item-thumb <?php echo esc_attr($classes); ?>">
             <?php
             if (has_post_thumbnail()) {
                 the_post_thumbnail();
