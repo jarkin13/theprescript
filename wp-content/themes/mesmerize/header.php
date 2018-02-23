@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/gve7oml.css">
 	<?php wp_head(); ?>
   <?php if( is_single() ) : ?>
-    <meta property="og:url"           content=<?php echo '"' . get_permalink() . '"'; ?> />
+    <?php
+      setup_postdata( $post );
+      $content = get_the_content();
+    ?>
+    <meta property="og:url"           content="<?php echo get_permalink(); ?>" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content=<?php echo '"' . get_the_title() . '"';?> />
-    <meta property="og:description"   content=<?php echo '"' . get_the_excerpt() . '"';?> />
-    <meta property="og:image"         content=<?php echo '"' . the_post_thumbnail_url()  .'"'; ?> />
+    <meta property="og:title"         content="<?php echo get_the_title(); ?>" />
+    <meta property="og:description"   content="<?php echo substr($content, 0, 300); ?>..." />
+    <meta property="og:image"         content="<?php echo the_post_thumbnail_url(); ?>" />
   <?php endif; ?>
 </head>
 
