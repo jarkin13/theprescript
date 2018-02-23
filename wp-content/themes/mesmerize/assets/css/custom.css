@@ -346,7 +346,7 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
   margin-bottom: 8.5rem;
 }
 
-.template-products .content {
+.template-products .content .row-main {
   padding-top: 4.25rem;
 }
 
