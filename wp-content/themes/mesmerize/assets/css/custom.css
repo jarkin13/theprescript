@@ -346,6 +346,10 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
   margin-bottom: 8.5rem;
 }
 
+.template-products .content {
+  padding-top: 8.5rem;
+}
+
 .template-products h1 {
   font-size: 22px;
   line-height: 1.63636364em;
