@@ -345,3 +345,47 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 .template-products .col-products {
   margin-bottom: 8.5rem;
 }
+
+.template-products h1 {
+  font-size: 22px;
+  line-height: 1.63636364em;
+  letter-spacing: .20454545em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.template-products h2 {
+  color: rgba(0,0,0,.5);
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.template-products .col-products p {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.85714286em;
+  font-weight: 300;
+  color: #767676;
+}
+
+.template-products .col-products-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.template-products .button {
+  margin-bottom: 0;
+}
+
+.template-products .social {
+  padding-left: 10px;
+}
+
+.template-products .social span {
+  width: 32px;
+  height: 22px;
+}

@@ -7,10 +7,12 @@
       <h2><?php the_field('brand'); ?></h2>
       <h1><?php the_title(); ?></h1>
       <?php the_content(); ?>
-      <a class="button button-outline" href="<?php the_field('product_link'); ?>" target="_blank">CHECK OUT</a>
-      <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-        <a class="a2a_button_facebook"></a>
-        <a class="a2a_button_twitter"></a>
+      <div class="col-products-footer">
+        <a class="button button-outline" href="<?php the_field('product_link'); ?>" target="_blank">CHECK OUT</a>
+        <div class="social a2a_kit a2a_kit_size_32 a2a_default_style">
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_twitter"></a>
+        </div>
       </div>
     </div>
   </div>
