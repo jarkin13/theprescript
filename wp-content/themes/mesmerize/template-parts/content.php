@@ -1,9 +1,7 @@
 <div class="<?php mesmerize_print_archive_entry_class(); ?>" data-masonry-width="<?php mesmerize_print_masonry_col_class(true); ?>">
     <div id="post-<?php the_ID(); ?>" <?php post_class('blog-post card '); ?>>
         <div class="post-content">
-            <?php if ( !is_home() ) {
-              mesmerize_print_post_thumb();
-            } ?>
+            <?php mesmerize_print_post_thumb(); ?>
 
             <div class="col-xs-12 col-padding col-padding-xs">
                 <h3 class="post-title">
