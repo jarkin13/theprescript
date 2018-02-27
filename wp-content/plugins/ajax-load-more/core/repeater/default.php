@@ -1,21 +1,10 @@
-<div class="<?php mesmerize_print_archive_entry_class(); ?>" data-masonry-width="<?php mesmerize_print_masonry_col_class(true); ?>">
-    <div id="post-<?php the_ID(); ?>" <?php post_class('blog-post card '); ?>>
-        <div class="post-content">
-            <?php mesmerize_print_post_thumb(); ?>
-
-            <div class="col-xs-12 col-padding col-padding-xs">
-                <h3 class="post-title">
-                    <a href="<?php the_permalink(); ?>" rel="bookmark">
-                        <?php the_title(); ?>
-                    </a>
-                </h3>
-                <?php //get_template_part('template-parts/content-list-post-meta'); ?>
-
-                <div class="post-excerpt">
-                  <?php mesmerize_custom_excerpt(); ?>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
+<li<?php if (! has_post_thumbnail() ) { echo ' class="no-img"'; } ?>>
+   <?php if ( has_post_thumbnail() ) {
+      the_post_thumbnail('alm-thumbnail');
+   }?>
+   <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+   <p class="entry-meta">
+       <?php the_time("F d, Y"); ?>
+   </p>
+   <?php the_excerpt(); ?>
+</li>
