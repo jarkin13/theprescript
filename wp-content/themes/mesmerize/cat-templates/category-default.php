@@ -15,7 +15,7 @@
     <div class="navigation-c">
         <?php
         if (have_posts()):
-            mesmerize_print_pagination();
+            echo do_shortcode('[ajax_load_more category="' . get_the_category()[0]->slug .' "]');
         endif;
         ?>
     </div>
