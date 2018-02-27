@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ALM Unlimited\n"
+"POT-Creation-Date: 2016-02-04 09:56-0500\n"
+"PO-Revision-Date: 2016-02-04 09:56-0500\n"
+"Last-Translator: Darren Cooney <dcooney@ecentricarts.com>\n"
+"Language-Team: \n"
+"Language: en_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../ajax-load-more-theme-repeaters.php:89
+msgid "Directory Selection"
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:152
+msgid "Theme Repeater"
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:153
+msgid "Select a repeater template from the <span>"
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:167
+msgid "Select Theme Repeater"
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:180
+msgid "No Templates Found"
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:201
+msgid ""
+"Customize your installation of the <a href=\"http://connekthq.com/plugins/"
+"ajax-load-more/theme-repeaters/\">Theme Repeaters</a> add-on."
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:219
+msgid ""
+"Select the directory that will hold your <strong>Theme Repeater</strong> "
+"templates - all templates <u>must</u> be stored in a top level directory "
+"within your current theme folder"
+msgstr ""
+
+#: ../ajax-load-more-theme-repeaters.php:220
+msgid ""
+"If a directory has not been specified, Ajax Load More will attempt to load "
+"templates from <span><i class=\"fa fa-folder\"></i> alm_templates</span>"
+msgstr ""
+
+#: ../vendor/EDD_SL_Plugin_Updater.php:178
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: ../vendor/EDD_SL_Plugin_Updater.php:185
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: ../vendor/EDD_SL_Plugin_Updater.php:325
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: ../vendor/EDD_SL_Plugin_Updater.php:325
+msgid "Error"
+msgstr ""
+
+#~ msgid "Sorry, the page you have requested cannot be found."
+#~ msgstr "Désolé, la page que vous demandez est introuvable."
+
+#~ msgid ""
+#~ "Be sure to check your spelling. If all else fails, you can go back to the "
+#~ "page you came from, return to the <a href=\"/\">homepage</a>, or try "
+#~ "searching."
+#~ msgstr ""
+#~ "Veuillez vérifier l'orthographe. Si tout échoue, retournez à la page "
+#~ "précédente, retournez à la <a href=\"/\">page d'accueil</a>, ou essayez "
+#~ "une recherche."
+
+#~ msgid "Connect with Willow"
+#~ msgstr "Connectez-vous avec Willow"
+
+#~ msgid ""
+#~ "Sign up to stay in touch and receive Willow news, updates and event "
+#~ "information."
+#~ msgstr ""
+#~ "Inscrivez-vous pour rester en contact avec nous et recevoir des nouvelles "
+#~ "de Willow (Disponibles en anglais seulement)"
+
+#~ msgid "all our funders"
+#~ msgstr "tous nos donateurs"
+
+#~ msgid "call our helpline"
+#~ msgstr "Appelez notre ligne de soutien"
+
+#~ msgid "share"
+#~ msgstr "Partager"
+
+#~ msgid "Share on Twitter"
+#~ msgstr "Partager sur Twitter"
+
+#~ msgid "Share on Facebook"
+#~ msgstr "Partager sur Facebook"
+
+#~ msgid "Share via Email"
+#~ msgstr "Partager par courriel"
+
+#~ msgid "Print Page"
+#~ msgstr "Imprimer cette page"
+
+#~ msgid "Your search returned <strong>%s</strong> result%s"
+#~ msgstr "Votre recherche a généré <strong>%s</strong>  résultat%s "
+
+#~ msgid "search"
+#~ msgstr "Recherche"
+
+#~ msgid "Showing"
+#~ msgstr "Montrant"
+
+#~ msgid "result(s) in"
+#~ msgstr "résultat(s) dans"
+
+#~ msgid "For more information please contact:"
+#~ msgstr "Pour de plus amples renseignements, veuillez contacter : "
+
+#~ msgid "filter support groups"
+#~ msgstr "Filtrer les groupes de soutien"
+
+#~ msgid "select a province and city to find a support group"
+#~ msgstr ""
+#~ "Sélectionnez votre province et votre ville pour trouver un groupe de "
+#~ "soutien"
+
+#~ msgid "-- Select Province --"
+#~ msgstr "Sélectionnez province"
+
+#~ msgid "Filter"
+#~ msgstr "Filtrer"
