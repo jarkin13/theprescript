@@ -25,7 +25,7 @@
                     //get_template_part('template-parts/content', get_post_format());
                     $categories[get_the_category()[0]->slug] = get_the_category()[0]->slug;
                 endwhile;
-                echo do_shortcode('[ajax_load_more category="'. implode(",", $categories) .'" theme_repeater="content.php" transition="masonry" masonry_selector=".post-list-item" css_classes="post-list"]');
+                echo do_shortcode('[ajax_load_more category="'. implode(",", $categories) .'" theme_repeater="content.php" transition="masonry" masonry_selector=".post-list-item" css_classes="post-list" posts_per_page="6"]');
             else:
                 get_template_part('template-parts/content', 'none');
             endif;
