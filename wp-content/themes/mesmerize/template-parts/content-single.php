@@ -24,6 +24,14 @@
               endif;
               echo the_time( get_option( 'date_format' ) );
               ?>
+
+              <?php if( !get_field('prescript_editor', 'user_' . $userID) ) : ?>
+                <div class="social">
+                  <a href=""><i class="fas fa-external-link-alt"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              <?php endif; ?>
             </div>
             <?php
             the_content();

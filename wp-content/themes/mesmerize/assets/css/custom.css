@@ -272,11 +272,11 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 }
 
 .single .post-content-inner .post-author:after {
-    border: .1rem solid #000;
-    content: "";
-    display: block;
-    margin: 2rem auto 2rem;
-    width: 80px;
+  border: .1rem solid #000;
+  content: "";
+  display: block;
+  margin: 1rem auto 2rem;
+  width: 80px;
 }
 
 .single .post-content-inner .post-author img {
@@ -290,6 +290,15 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 .single .post-content-inner .post-author img.prescript-editor {
   padding: 7px;
   border: 1px solid #000000;
+}
+
+.single .post-content-inner .post-author .social {
+  margin-top: 10px;
+}
+
+.single .post-content-inner .post-author .social a {
+  color: #d2b25b;
+  padding: 2.5px;
 }
 
 /* BLOG ARCHIVE */
@@ -323,7 +332,7 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 
 #blog_menu > .current_page_item > a,
 #blog_menu > .current-menu-item > a {
-    border-bottom: 3px solid #d2b25b;
+  border-bottom: 3px solid #d2b25b;
 }
 
 .bo-garden {
@@ -370,7 +379,7 @@ ul.dropdown-menu.active-line-bottom > li:not(.current-menu-item):not(.current_pa
 .template-products .col-products p {
   margin-bottom: 40px;
   font-size: 14px;
-  line-height: 1.85714286em;
+  line-height: 1.86em;
   font-weight: 300;
   color: #767676;
 }
