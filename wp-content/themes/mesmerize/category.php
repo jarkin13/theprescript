@@ -3,9 +3,12 @@
 <?php
   $catID = get_the_category()[0]->term_id;
   $template = get_field('template', 'category_' . $catID);
+  $class = 'blog-page template-' . $template;
+  if ($template !== 'products') $class .= ' content';
 ?>
 
-    <div class="content blog-page template-<?php echo $template; ?>">
+    <div class="<?php echo $class; ?>">
+
         <div class="<?php mesmerize_page_content_wrapper_class(); ?>">
 
           <?php
@@ -29,6 +32,7 @@
                 ?>
                 <?php get_sidebar(); ?>
             </div>
+
         </div>
     </div>
 

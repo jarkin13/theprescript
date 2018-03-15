@@ -304,6 +304,14 @@ function mesmerize_do_enqueue_assets()
     $textDomain   = mesmerize_get_text_domain();
 
     mesmerize_enqueue_style(
+        'bootstrap-css',
+        array(
+            'src'     => 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css',
+            'has_min' => true,
+        )
+    );
+
+    mesmerize_enqueue_style(
         $textDomain . '-style',
         array(
             'src'     => get_stylesheet_uri(),
@@ -376,6 +384,33 @@ function mesmerize_do_enqueue_assets()
             'src'     => get_template_directory_uri() . '/assets/js/libs/fixto.js',
             'deps'    => array('jquery'),
             'has_min' => true,
+        )
+    );
+
+    mesmerize_enqueue_script(
+        'popper-js',
+        array(
+            'src'     => 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
+            'deps'    => array('jquery'),
+            'has_min' => false,
+        )
+    );
+
+    mesmerize_enqueue_script(
+        'bootstrap-js',
+        array(
+            'src'     => 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js',
+            'deps'    => array('jquery'),
+            'has_min' => true,
+        )
+    );
+
+    mesmerize_enqueue_script(
+        'bootstrap-carousel-js',
+        array(
+            'src'     => get_template_directory_uri() . '/assets/js/carousel.js',
+            'deps'    => array('jquery'),
+            'has_min' => false,
         )
     );
 
